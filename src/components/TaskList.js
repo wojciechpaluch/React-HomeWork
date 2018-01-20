@@ -22,7 +22,7 @@ class TaskList extends React.Component {
 
     handleRemove = (index) => {
         this.setState({
-            tasks: this.state.tasks.filter((task, iterationIndex) => index !== iterationIndex)
+            tasks: this.state.tasks.filter((task, Index) => index !== Index)
         })
     }
     render() {
