@@ -1,5 +1,6 @@
 import React from 'react';
 import Checkbox from 'material-ui/Checkbox'
+import DeleteIcon from 'material-ui-icons/Delete'
 
 
 class Task extends React.Component {
@@ -28,6 +29,7 @@ class Task extends React.Component {
                         value="checkedA"
                     />
                     {this.props.name}
+                    <DeleteIcon onClick={this.props.onDelete}/>
                 </div>
             );
         }
